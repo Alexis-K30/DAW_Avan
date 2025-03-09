@@ -8,6 +8,12 @@ function cerrarMenu(){
     document.getElementById("right-menu").classList.remove("open")
 }
 
+window.onload = init;
+
+function init () {
+
+}
+
 //Manejadores de eventos que nos ayuda a controlar el menu multinivel, van en parejas, lo que hacen que el submenu se vea y los que hacen que
 //desaparezcan
 //Estos eventos y funciones hacen que se pueda ver el menu cuando se hace
@@ -58,7 +64,7 @@ window.addEventListener("load", function(){
     })
 })
 
-//Colocando evento para agregar estilo al hoover desde JavaScript
+//Colocando evento para agregar estilo al hover desde JavaScript
 const item = document.querySelectorAll(".items");
 
 item.forEach(item => {

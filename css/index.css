@@ -1,71 +1,86 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dosis:wght@200..800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#right-menu{
-    background-color: #666666;
-    height: auto;
-    width: 100%;
+header * {
+    color: white;
 }
 
-#right-menu #botonX{
+nav {
+    background-color: #00B4D8;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: "Alfa Slab One", serif;
+    font-size: 5rem;
+}
+
+#botonX {
     display: none;
 }
 
-#right-menu.open {
-    width: 200px;
-}
-
-#barras{
+#barras {
     display: none;
 }
 
-.barra-nav{
+.menu {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+    line-height: 4rem;
 }
 
-li a{ 
+.itemMenu {
+    display: inline-block;
+    width: 12rem;
+    text-align: center;
+}
+
+.itemMenu:hover {
+    background-color: #0077B6;
+}
+
+.itemMenu a {
+    display: block;
+    padding: 0 2.5rem;
     text-decoration: none;
     color: white;
 }
 
-.container-titulo, .container-menu, li{
-    display: inline-block;
-    color: white;
-}
-
-.container-titulo{
-    padding: 8px 15px 0px 15px;
-}
-
-.menu{
-    list-style: none;
-}
-
-
-li{
-    padding: 12px 15px 12px 15px;
-}
-
-.subElemento{
-    display: block;
-    background-color: #373737;
-}
-
-.segundo-nivel{
-    display:none;
+.segundo-nivel {
+    display: none;
     position: absolute;
+    background-color: #005D8F;
 }
 
-.in{
+.itemMenu:hover .segundo-nivel {
+    display: block;
+    width: inherit;
+}
+
+.subElemento {
+    display: block;
+}
+
+.subElemento:hover {
+    background-color: #004266;
+}
+
+.in {
     background: #373737;
 }
 
-@media (max-width: 850px){
-    #right-menu{
+@media (max-width: 850px) {
+    header {
         height: 100vh;
         position: fixed;
         width: 0;
@@ -77,35 +92,36 @@ li{
         transition: .5s;
     }
 
-    #right-menu #botonX{
+    header #botonX {
         display: block;
     }
-    
-    #barras{
+
+    #barras {
         display: block;
         padding: 15px;
         background-color: #666666;
         color: white;
     }
 
-    i, h1{
+    i,
+    h1 {
         display: inline-block;
         font-size: 25px;
     }
 
-    h1{
+    h1 {
         padding-left: 20px;
     }
 
-    .container-menu{
+    .container-menu {
         padding-left: 0;
     }
 
-    .barra-nav{
+    .barra-nav {
         display: block;
     }
 
-    header a{
+    header a {
         text-decoration: none;
         color: white;
         padding: 8px 8px 8px 15px;

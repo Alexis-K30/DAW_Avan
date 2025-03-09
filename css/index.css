@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
 }
 
 header * {
@@ -36,9 +37,8 @@ h1 {
     justify-content: center;
     list-style: none;
     overflow: hidden;
-    line-height: 4rem;
+    line-height: 3rem;
     background-color: #0099B8;
-    font-family: "Dosis", sans-serif;
     font-weight: 700;
 }
 
@@ -46,41 +46,45 @@ h1 {
     display: inline-block;
     width: 12rem;
     text-align: center;
+    transition: background-color 0.2s;
 }
 
 .itemMenu:hover {
     background-color: #0077B6;
+    transition: background-color 0.2s;
 }
 
 .itemMenu a {
     display: block;
-    padding: 0 2.5rem;
     text-decoration: none;
     color: white;
 }
 
 .segundo-nivel {
-    display: none;
     position: absolute;
     background-color: #005D8F;
+    width: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
 }
 
 .itemMenu:hover .segundo-nivel {
     display: block;
-    width: inherit;
-    /*transition: transform 0.5s;
-    transition-timing-function: ease-out;*/
+    max-height: 30rem;
 }
 
 .subElemento {
     display: block;
+    transition: background-color 0.2s;
 }
 
 .subElemento:hover {
     background-color: #004266;
+    transition: background-color 0.2s;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     header {
         height: 100vh;
         position: fixed;

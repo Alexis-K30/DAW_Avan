@@ -80,10 +80,6 @@ h1 {
     background-color: #004266;
 }
 
-.in {
-    background: #373737;
-}
-
 @media (max-width: 850px) {
     header {
         height: 100vh;

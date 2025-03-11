@@ -12,7 +12,7 @@ header * {
 }
 
 nav {
-    background-color: #00B4D8;
+    background-color: #14213B;
 }
 
 h1 {
@@ -24,11 +24,7 @@ h1 {
     font-size: 5rem;
 }
 
-#botonX {
-    display: none;
-}
-
-#barras {
+#menuBarras, #btnMenu {
     display: none;
 }
 
@@ -38,7 +34,7 @@ h1 {
     list-style: none;
     overflow: hidden;
     line-height: 3rem;
-    background-color: #0099B8;
+    background-color: #1F335B;
     font-weight: 700;
 }
 
@@ -50,7 +46,7 @@ h1 {
 }
 
 .itemMenu:hover {
-    background-color: #0077B6;
+    background-color: #123B7D;
     transition: background-color 0.2s;
 }
 
@@ -62,7 +58,7 @@ h1 {
 
 .segundo-nivel {
     position: absolute;
-    background-color: #005D8F;
+    background-color: #0B244C;
     width: inherit;
     max-height: 0;
     overflow: hidden;
@@ -80,58 +76,66 @@ h1 {
 }
 
 .subElemento:hover {
-    background-color: #004266;
+    background-color: #1C5DC4;
     transition: background-color 0.2s;
 }
 
 @media (max-width: 1000px) {
-    header {
-        height: 100vh;
-        position: fixed;
-        width: 0;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        background-color: #666666;
-        overflow-x: hidden;
-        transition: .5s;
+
+    nav {
+        display: flex;
+        align-items: center;
     }
 
-    header #botonX {
-        display: block;
-    }
-
-    #barras {
-        display: block;
-        padding: 15px;
-        background-color: #666666;
-        color: white;
-    }
-
-    i,
     h1 {
+        margin: 0;
         display: inline-block;
-        font-size: 25px;
+        width: 90%;
     }
 
-    h1 {
-        padding-left: 20px;
+    .menu {
+        display: block;
+        position: absolute;
+        top: 142px;
+        width: 40%;
+        height: 100%;
+        line-height: 5rem;
+        font-size: 1.3rem;
+        transition: transform 0.3s;
     }
 
-    .container-menu {
-        padding-left: 0;
+    .itemMenu {
+        display: block;
+        width: 100%;
     }
 
-    .barra-nav {
+    #lblMenu {
+        padding-left: 5%;
+    }
+
+    i {
         display: block;
     }
 
-    header a {
-        text-decoration: none;
-        color: white;
-        padding: 8px 8px 8px 15px;
-        font-size: 20px;
-        display: block;
-        transition: .5s ease;
+    i.fa-bars {
+        font-size: 50px;
+    }
+
+    i.fa-xmark {
+        font-size: 58px;
+    }
+
+    #btnMenu:checked + label i.fa-xmark {
+        display: none;
+    }
+
+    #btnMenu:not(:checked) + label i.fa-bars {
+        display: none;
+    }
+
+    nav #btnMenu:checked ~ .menu {
+        max-width: 40%;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
     }
 }

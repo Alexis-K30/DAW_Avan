@@ -7,6 +7,10 @@
     font-family: "Dosis", sans-serif;
 }
 
+body {
+    background-color: #495C78;
+}
+
 header * {
     color: white;
 }
@@ -83,6 +87,12 @@ i {
 .subElemento:hover {
     background-color: #1C5DC4;
     transition: background-color 0.2s;
+}
+
+main {
+    width: 65%;
+    margin: 0 auto;
+    background-color: #E0E1DD;
 }
 
 @media (max-width: 1000px) {

@@ -182,3 +182,35 @@ main {
         width: 100%;
     }
 }
+
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 4rem ;
+    /*elimiar el 'top' para elimiar el espaciado*/
+    top: 15.8rem;
+    margin:2rem 7rem ;
+    position: relative;
+
+
+}
+
+
+@media (max-width: 768px) {
+    .map-container {
+        display: inline;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        padding: .03rem ;
+        margin: 1rem ;
+
+    }
+
+}

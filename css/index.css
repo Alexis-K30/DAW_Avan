@@ -7,10 +7,6 @@
     font-family: "Dosis", sans-serif;
 }
 
-body {
-    background-color: #495C78;
-}
-
 header * {
     color: white;
 }
@@ -19,13 +15,13 @@ nav {
     background-color: #14213B;
 }
 
-h1 {
+h1#titulo {
     display: block;
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
-    font-family: "Alfa Slab One", serif;
     font-size: 5rem;
+    font-family: "Alfa Slab One", serif;
 }
 
 i {
@@ -89,20 +85,22 @@ i {
     transition: background-color 0.2s;
 }
 
-main {
-    width: 65%;
-    margin: 0 auto;
-    background-color: #E0E1DD;
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 2% 5%;
+    z-index: 0;
 }
 
 @media (max-width: 1000px) {
-
     nav {
         display: flex;
         align-items: center;
     }
 
-    h1 {
+    h1#titulo {
         margin: 0;
         display: inline-block;
         width: 90%;
@@ -112,7 +110,7 @@ main {
     .menu {
         display: block;
         position: absolute;
-        top: 119px;
+        top: 109px;
         width: 50%;
         overflow: auto;
         line-height: 3rem;
@@ -171,36 +169,17 @@ main {
         font-size: 35px;
     }
 
-    h1 {
+    h1#titulo {
         font-size: 2.5rem;
         padding: 0.5rem;
     }
 
     .menu {
-        top: 71px;
+        top: 64px;
         font-size: 1rem;
         width: 100%;
     }
-}
-
-
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    padding: 4rem ;
-    /*elimiar el 'top' para elimiar el espaciado*/
-    top: 15.8rem;
-    margin:2rem 7rem ;
-    position: relative;
-
-
-}
-
-
-@media (max-width: 768px) {
+    /*
     .map-container {
         display: inline;
         height: 50vh;
@@ -208,9 +187,7 @@ main {
         top: 0;
         justify-content: center;
         align-items: center;
-        padding: .03rem ;
-        margin: 1rem ;
-
+        padding: 0.3rem;
     }
-
+    */
 }

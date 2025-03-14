@@ -6,6 +6,7 @@ const infoCard = document.getElementById('infoCard');
 //const cardImg = document.getElementById('cardImg');
 const cardTitle = document.getElementById('cardTitle');
 const cardDesc = document.getElementById('cardDesc');
+const cardDesc2 = document.getElementById('cardDesc2');
 
 function init() {
     ajustarMenu();
@@ -17,10 +18,12 @@ function init() {
             const nombre = event.target.getAttribute('data-nombre');
             const imgSrc = event.target.getAttribute('data-img');
             const descripcion = event.target.getAttribute('data-descripcion');
+            const descripcion2 = event.target.getAttribute('data-descripcion2');
 
             cardTitle.textContent = nombre;
             //cardImg.src = imgSrc;
             cardDesc.textContent = descripcion;
+            cardDesc2.textContent = descripcion2;
             infoCard.style.display = 'block';
             const instance = Popper.createPopper(event.target, infoCard, {
                 placement: 'top'

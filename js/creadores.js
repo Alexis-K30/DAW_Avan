@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = [
-        { id: 1, title1: 'Nombre 1', image1Src: 'image.webp' },
-        { id: 2, title1: 'Nombre 2', image1Src: 'image.webp' },
-        { id: 3, title1: 'Nombre 3', image1Src: 'image.webp' },
-        { id: 4, title1: 'Nombre 4', image1Src: 'image.webp' },
-        { id: 5, title1: 'Nombre 5', image1Src: 'image.webp' },
+        { id: 1, title1: 'Bryan Peña', image1Src: 'img/image.webp' },
+        { id: 2, title1: 'Guillermo Hernández', image1Src: 'img/image.webp' },
+        { id: 3, title1: 'Yassir Meléndez', image1Src: 'img/image.webp' },
+        { id: 4, title1: 'Anderson Hernández', image1Src: 'img/image.webp' },
+        { id: 5, title1: 'Daniel Flores', image1Src: 'img/image.webp' },
     ];
 
     const container = document.getElementById("sections-container");

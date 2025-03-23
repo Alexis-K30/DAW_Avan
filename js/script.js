@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sectionDiv.className = "grid grid-cols-3 gap-4 mb-12";
 
         const imgDiv = document.createElement("div");
-        imgDiv.className = "border rounded-lg p-4 flex items-center justify-center h-40 md:h-60 col-span-1";
+        imgDiv.className = "border-2 border-gray-400 rounded-lg p-2 flex items-center justify-center h-40 md:h-60 col-span-1 ";
         const imgContainer = document.createElement("div");
         imgContainer.className = "img-container";
         const img = document.createElement("img");
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imgDiv.appendChild(imgContainer);
 
         const textDiv = document.createElement("div");
-        textDiv.className = "border rounded-lg p-4 flex items-center justify-center h-40 md:h-60 col-span-2";
+        textDiv.className = "border-2 border-gray-400 rounded-lg p-2 flex items-center justify-center h-40 md:h-60 col-span-2";
         const textSpan = document.createElement("span");
         textSpan.className = "text-xl md:text-2xl";
         textSpan.textContent = section.title1;

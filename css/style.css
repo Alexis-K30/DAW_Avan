@@ -100,6 +100,11 @@ i {
     z-index: 0;
 }
 
+.ease-in-out {
+    transition-timing-function: var( cubic-bezier(0.4, 0, 0.2, 1));
+    transition-duration: 300ms;
+}
+
 @media (max-width: 1000px) {
     nav {
         display: flex;
@@ -185,30 +190,7 @@ i {
         font-size: 1rem;
         width: 100%;
     }
-    /*
-    .map-container {
-        display: inline;
-        height: 50vh;
-        width: 100%;
-        top: 0;
-        justify-content: center;
-        align-items: center;
-        padding: 0.3rem;
-    }
-    */
 }
-.ease-in-out {
-    transition-timing-function: var( cubic-bezier(0.4, 0, 0.2, 1));
-    transition-duration: 300ms;
-}
-
-
-
-
-
-
-
-
 
 
 /*
@@ -280,14 +262,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
 /*
  * Decoraciones para la pagina de creadores 
  */
@@ -305,3 +279,58 @@ textarea {
     max-height: 100%;
     object-fit: contain;
 }
+
+/*
+ * Decoraciones para las páginas de departamentos
+ */
+
+ main {
+    width: 70%;
+    margin: 30px auto;
+    padding: 1rem;
+    background-color: #F5F5F4;
+    box-shadow: 0px 0px 5px 0px #CCCCCC;
+ }
+
+ h2#nombreDept, h3.tema {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Niconne", serif;
+    color: #fff;
+ }
+
+ h2#nombreDept {
+    font-size: 3.5rem;
+ }
+
+ h3.tema {
+    font-size: 2.5rem;
+ }
+
+ article {
+    margin: 20px 0;
+    padding: 1rem;
+    overflow: hidden;
+ }
+
+ p {
+    font-size: 1.1rem;
+ }
+
+ img#imgDept {
+    float: right;
+ }
+
+ ol li {
+    margin-left: 2rem;
+ }
+
+ .pacific-cyan {
+    background-color: #00B4D8;
+ }
+
+ .honolulu-blue {
+    background-color: #0077B6;
+ }

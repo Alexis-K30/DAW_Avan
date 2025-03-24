@@ -380,3 +380,13 @@ div.geografia {
     color: red;
     font-weight: 700;
 }
+
+div.personajes{
+    display: flex;
+    gap: 24px;
+    margin: 32px 0 32px 0;
+}
+
+img.img-persona{
+    width: 31%;
+}

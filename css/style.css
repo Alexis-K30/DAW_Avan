@@ -363,7 +363,6 @@ section {
     width: 70%;
     height: 500px;
     margin: 20px 0 20px 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
 }
 
 div.geografia {

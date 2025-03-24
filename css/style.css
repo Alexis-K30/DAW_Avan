@@ -284,53 +284,77 @@ textarea {
  * Decoraciones para las páginas de departamentos
  */
 
- main {
-    width: 70%;
-    margin: 30px auto;
-    padding: 1rem;
-    background-color: #F5F5F4;
-    box-shadow: 0px 0px 5px 0px #CCCCCC;
- }
+main {
+width: 70%;
+margin: 30px auto;
+padding: 1rem;
+background-color: #F5F5F4;
+box-shadow: 0px 0px 5px 0px #CCCCCC;
+}
 
- h2#nombreDept, h3.tema {
-    display: inline-block;
-    width: 100%;
-    padding: 0.5rem 0;
+h2#nombreDept, h3.tema {
+display: inline-block;
+width: 100%;
+padding: 0.5rem 0;
+text-align: center;
+font-family: "Niconne", serif;
+color: #fff;
+}
+
+h2#nombreDept {
+font-size: 3.5rem;
+}
+
+h3.tema {
+font-size: 2.5rem;
+}
+
+article {
+margin: 20px 0;
+padding: 1rem;
+overflow: hidden;
+}
+
+p {
+font-size: 1.1rem;
+}
+
+img#imgDept {
+float: right;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+ol li {
+margin-left: 2rem;
+}
+
+.pacific-cyan {
+background-color: #00B4D8;
+}
+
+.honolulu-blue {
+background-color: #0077B6;
+}
+
+section{
+margin: 30px 0 0 0;
+}
+
+.titulo-n3{
+    background: #0077B6;
+    color: white;
+    width: 50%;
+    padding: 8px 0px 8px 0px;
+    border-radius: 10px;
+}
+
+.turismo{
     text-align: center;
-    font-family: "Niconne", serif;
-    color: #fff;
- }
+}
 
- h2#nombreDept {
-    font-size: 3.5rem;
- }
-
- h3.tema {
-    font-size: 2.5rem;
- }
-
- article {
-    margin: 20px 0;
-    padding: 1rem;
-    overflow: hidden;
- }
-
- p {
-    font-size: 1.1rem;
- }
-
- img#imgDept {
-    float: right;
- }
-
- ol li {
-    margin-left: 2rem;
- }
-
- .pacific-cyan {
-    background-color: #00B4D8;
- }
-
- .honolulu-blue {
-    background-color: #0077B6;
- }
+.img-turismo{
+    width: 80%;
+    height: 500px;
+    margin: 20px 0 20px 0;
+}

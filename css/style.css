@@ -93,6 +93,10 @@ i {
     transition: background-color 0.2s;
 }
 
+#lblMenu {
+    display: none;
+}
+
 .map-container {
     display: flex;
     justify-content: center;
@@ -111,6 +115,9 @@ i {
     nav {
         display: flex;
         align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
     }
 
     h1#titulo {
@@ -147,7 +154,8 @@ i {
     }
 
     #lblMenu {
-        padding-left: 5%;
+        display: inline-block;
+        padding-left: 4%;
     }
 
     i {
@@ -216,7 +224,7 @@ form {
 
 }
 
-label {
+form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -381,7 +389,7 @@ div.geografia {
 
 .img-geo {
     width: 100%;
-    
+
 }
 
 .info-geo {

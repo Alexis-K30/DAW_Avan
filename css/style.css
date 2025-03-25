@@ -74,6 +74,7 @@ i {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s;
+    text-align: center;
 }
 
 .itemMenu:hover .segundo-nivel {
@@ -83,6 +84,7 @@ i {
 
 .subElemento {
     display: block;
+    width: 12rem;
     transition: background-color 0.2s;
 }
 

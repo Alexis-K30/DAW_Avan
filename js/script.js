@@ -51,6 +51,12 @@ function init() {
 function ajustarMenu() {
     if (window.innerWidth <= 1000) {
         menuVertical.style.height = window.innerHeight - barraNav.offsetHeight + "px";
+        for (let i = 0; i < menuSec.length; i++) {
+            menuSec[i].style.width = "";
+        }
+        for (let i = 0; i < subElem.length; i++) {
+            subElem[i].style.width = "";
+        }
     }
     else {
         menuVertical.style.height = 48 + "px";

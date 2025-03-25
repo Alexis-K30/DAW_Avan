@@ -142,6 +142,10 @@ i {
         position: static;
     }
 
+    .subElemento {
+        width: 100%;
+    }
+
     #lblMenu {
         padding-left: 5%;
     }
@@ -361,10 +365,10 @@ section {
     text-align: center;
 }
 
-.img-turismo {
-    width: 70%;
-    height: 500px;
-    margin: 20px 0 20px 0;
+div img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 div.geografia {
@@ -372,10 +376,11 @@ div.geografia {
     align-content: center;
     gap: 3%;
     margin: 20px 0;
+    flex-direction: row;
 }
 
 .img-geo {
-    width: 30%;
+    width: 100%;
 }
 
 .info-geo::first-line {
@@ -383,16 +388,41 @@ div.geografia {
     font-weight: 700;
 }
 
-div.personajes{
+div.personajes {
     display: flex;
     gap: 24px;
     margin: 32px 0 32px 0;
 }
 
-img.img-persona{
-    width: 31%;
+img.img-persona {
+    width: 30%;
 }
 
-footer{
+footer {
     background-color: #1F335B;
+}
+
+@media (max-width: 1200px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 100%;
+    }
+
+    .titulo-n3 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    div.geografia {
+        flex-direction: column;
+    }
+
+    img.img-persona {
+        width: 100%;
+    }
 }

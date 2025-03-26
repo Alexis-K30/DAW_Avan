@@ -345,15 +345,15 @@ ol li {
 }
 
 .pacific-cyan {
-    background-color: #00B4D8;
+    background-color: #123B7D;
 }
 
 .honolulu-blue {
-    background-color: #0077B6;
+    background-color: #14213B;
 }
 
 .vivid-sky-blue {
-    background-color: #33DDFF;
+    background-color: #5D7598;
 }
 
 section {
@@ -401,7 +401,7 @@ div.geografia {
 }
 
 .info-geo::first-line {
-    color: red;
+    color: #1C5DC4;
     font-weight: 700;
 }
 

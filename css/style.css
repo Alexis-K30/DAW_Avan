@@ -306,10 +306,6 @@ main {
     box-shadow: 0px 0px 5px 0px #CCCCCC;
 }
 
-p{
-    text-align: justify;
-}
-
 h2#nombreDept,
 h3.tema {
     display: inline-block;
@@ -375,6 +371,10 @@ section {
 
 .turismo {
     text-align: center;
+}
+
+div.turismo>img{
+    width: 100%;
 }
 
 div img {

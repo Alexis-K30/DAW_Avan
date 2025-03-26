@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = [
-        { id: 1, title1: 'Bryan Peña', image1Src: 'img/integrantes/Bryan.jpg' },
-        { id: 2, title1: 'Guillermo Hernández', image1Src: 'img/integrantes/Guille.jpg' },
-        { id: 3, title1: 'Yassir Meléndez', image1Src: 'img/integrantes/Yassir.jpg' },
-        { id: 4, title1: 'Anderson Hernández', image1Src: 'img/integrantes/Anderson.jpg' },
-        { id: 5, title1: 'Daniel Flores', image1Src: 'img/integrantes/Daniel.jpg' },
+        { id: 1, title1: 'Bryan Peña - Investigador / Desarrollador', image1Src: 'img/integrantes/Bryan.jpg' },
+        { id: 2, title1: 'Guillermo Hernández - Investigador / Desarrollador', image1Src: 'img/integrantes/Guille.jpg' },
+        { id: 3, title1: 'Yassir Meléndez - Investigador / Desarrollador', image1Src: 'img/integrantes/Yassir.jpg' },
+        { id: 4, title1: 'Anderson Hernández - Investigador / Desarrollador', image1Src: 'img/integrantes/Anderson.jpg' },
+        { id: 5, title1: 'Daniel Flores - Investigador / Desarrollador', image1Src: 'img/integrantes/Daniel.jpg' },
     ];
 
     const container = document.getElementById("sections-container");
